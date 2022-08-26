@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>client61850 module &#8212; gateway  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-client61850">
+<span id="client61850-module"></span><h1>client61850 module<a class="headerlink" href="#module-client61850" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="client61850.AddCause">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">client61850.</span></span><span class="sig-name descname"><span class="pre">AddCause</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.AddCause" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_1_OF_N_CONTROL">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_1_OF_N_CONTROL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_1_OF_N_CONTROL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_ABORTION_BY_CANCEL">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_ABORTION_BY_CANCEL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_ABORTION_BY_CANCEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_ABORTION_BY_COMMAND">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_ABORTION_BY_COMMAND</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_ABORTION_BY_COMMAND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_ABORTION_BY_COMMUNICATION_LOSS">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_ABORTION_BY_COMMUNICATION_LOSS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_ABORTION_BY_COMMUNICATION_LOSS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_ABORTION_BY_TRIP">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_ABORTION_BY_TRIP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_ABORTION_BY_TRIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_ABORTION_DUE_TO_DEVIATION">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_ABORTION_DUE_TO_DEVIATION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_ABORTION_DUE_TO_DEVIATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_BLOCKED_BY_HEALTH">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_BLOCKED_BY_HEALTH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_BLOCKED_BY_HEALTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_BLOCKED_BY_INTERLOCKING">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_BLOCKED_BY_INTERLOCKING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_BLOCKED_BY_INTERLOCKING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_BLOCKED_BY_MODE">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_BLOCKED_BY_MODE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_BLOCKED_BY_MODE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_BLOCKED_BY_PROCESS">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_BLOCKED_BY_PROCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_BLOCKED_BY_PROCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_BLOCKED_BY_SWITCHING_HIERARCHY">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_BLOCKED_BY_SWITCHING_HIERARCHY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_BLOCKED_BY_SWITCHING_HIERARCHY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_BLOCKED_BY_SYNCHROCHECK">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_BLOCKED_BY_SYNCHROCHECK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_BLOCKED_BY_SYNCHROCHECK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_COMMAND_ALREADY_IN_EXECUTION">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_COMMAND_ALREADY_IN_EXECUTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_COMMAND_ALREADY_IN_EXECUTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_ENDED_WITH_OVERSHOOT">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_ENDED_WITH_OVERSHOOT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_ENDED_WITH_OVERSHOOT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_INCONSISTENT_PARAMETERS">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_INCONSISTENT_PARAMETERS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">26</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_INCONSISTENT_PARAMETERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_INVALID_POSITION">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_INVALID_POSITION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_INVALID_POSITION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_LOCKED_BY_OTHER_CLIENT">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_LOCKED_BY_OTHER_CLIENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">27</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_LOCKED_BY_OTHER_CLIENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_NONE">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_NONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_NOT_SUPPORTED">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_NOT_SUPPORTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_NOT_SUPPORTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_NO_ACCESS_AUTHORITY">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_NO_ACCESS_AUTHORITY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_NO_ACCESS_AUTHORITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_OBJECT_ALREADY_SELECTED">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_OBJECT_ALREADY_SELECTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_OBJECT_ALREADY_SELECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_OBJECT_NOT_SELECTED">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_OBJECT_NOT_SELECTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_OBJECT_NOT_SELECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_PARAMETER_CHANGE_IN_EXECUTION">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_PARAMETER_CHANGE_IN_EXECUTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_PARAMETER_CHANGE_IN_EXECUTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_POSITION_REACHED">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_POSITION_REACHED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_POSITION_REACHED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_SELECT_FAILED">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_SELECT_FAILED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_SELECT_FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_STEP_LIMIT">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_STEP_LIMIT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_STEP_LIMIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_TIME_LIMIT_OVER">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_TIME_LIMIT_OVER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_TIME_LIMIT_OVER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.AddCause.ADD_CAUSE_UNKNOWN">
+<span class="sig-name descname"><span class="pre">ADD_CAUSE_UNKNOWN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#client61850.AddCause.ADD_CAUSE_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="client61850.IedClientError">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">client61850.</span></span><span class="sig-name descname"><span class="pre">IedClientError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.IedClientError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_ACCESS_DENIED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_ACCESS_DENIED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_ACCESS_DENIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_ALREADY_CONNECTED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_ALREADY_CONNECTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_ALREADY_CONNECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_CONNECTION_LOST">
+<span class="sig-name descname"><span class="pre">IED_ERROR_CONNECTION_LOST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_CONNECTION_LOST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_CONNECTION_REJECTED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_CONNECTION_REJECTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_CONNECTION_REJECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_ENABLE_REPORT_FAILED_DATASET_MISMATCH">
+<span class="sig-name descname"><span class="pre">IED_ERROR_ENABLE_REPORT_FAILED_DATASET_MISMATCH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_ENABLE_REPORT_FAILED_DATASET_MISMATCH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_HARDWARE_FAULT">
+<span class="sig-name descname"><span class="pre">IED_ERROR_HARDWARE_FAULT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">29</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_HARDWARE_FAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_INVALID_ADDRESS">
+<span class="sig-name descname"><span class="pre">IED_ERROR_INVALID_ADDRESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">28</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_INVALID_ADDRESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_MALFORMED_MESSAGE">
+<span class="sig-name descname"><span class="pre">IED_ERROR_MALFORMED_MESSAGE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">34</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_MALFORMED_MESSAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_NOT_CONNECTED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_NOT_CONNECTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_NOT_CONNECTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OBJECT_ACCESS_UNSUPPORTED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OBJECT_ACCESS_UNSUPPORTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OBJECT_ACCESS_UNSUPPORTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OBJECT_ATTRIBUTE_INCONSISTENT">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OBJECT_ATTRIBUTE_INCONSISTENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OBJECT_ATTRIBUTE_INCONSISTENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OBJECT_DOES_NOT_EXIST">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OBJECT_DOES_NOT_EXIST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OBJECT_DOES_NOT_EXIST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OBJECT_EXISTS">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OBJECT_EXISTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OBJECT_EXISTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OBJECT_INVALIDATED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OBJECT_INVALIDATED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">33</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OBJECT_INVALIDATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OBJECT_REFERENCE_INVALID">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OBJECT_REFERENCE_INVALID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OBJECT_REFERENCE_INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OBJECT_UNDEFINED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OBJECT_UNDEFINED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">27</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OBJECT_UNDEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OBJECT_VALUE_INVALID">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OBJECT_VALUE_INVALID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OBJECT_VALUE_INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OK">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_OUTSTANDING_CALL_LIMIT_REACHED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_OUTSTANDING_CALL_LIMIT_REACHED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_OUTSTANDING_CALL_LIMIT_REACHED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_SERVICE_NOT_IMPLEMENTED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_SERVICE_NOT_IMPLEMENTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">98</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_SERVICE_NOT_IMPLEMENTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_SERVICE_NOT_SUPPORTED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_SERVICE_NOT_SUPPORTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_SERVICE_NOT_SUPPORTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_TEMPORARILY_UNAVAILABLE">
+<span class="sig-name descname"><span class="pre">IED_ERROR_TEMPORARILY_UNAVAILABLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">26</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_TEMPORARILY_UNAVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_TIMEOUT">
+<span class="sig-name descname"><span class="pre">IED_ERROR_TIMEOUT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_TYPE_INCONSISTENT">
+<span class="sig-name descname"><span class="pre">IED_ERROR_TYPE_INCONSISTENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_TYPE_INCONSISTENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_TYPE_UNSUPPORTED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_TYPE_UNSUPPORTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_TYPE_UNSUPPORTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_UNEXPECTED_VALUE_RECEIVED">
+<span class="sig-name descname"><span class="pre">IED_ERROR_UNEXPECTED_VALUE_RECEIVED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_UNEXPECTED_VALUE_RECEIVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_UNKNOWN">
+<span class="sig-name descname"><span class="pre">IED_ERROR_UNKNOWN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">99</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client61850.IedClientError.IED_ERROR_USER_PROVIDED_INVALID_ARGUMENT">
+<span class="sig-name descname"><span class="pre">IED_ERROR_USER_PROVIDED_INVALID_ARGUMENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#client61850.IedClientError.IED_ERROR_USER_PROVIDED_INVALID_ARGUMENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="client61850.iec61850client">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">client61850.</span></span><span class="sig-name descname"><span class="pre">iec61850client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">readvaluecallback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loggerRef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmdTerm_cb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Rpt_cb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.ReadValue">
+<span class="sig-name descname"><span class="pre">ReadValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.ReadValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.ReportHandler_cb">
+<span class="sig-name descname"><span class="pre">ReportHandler_cb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.ReportHandler_cb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.cancel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.commandTerminationHandler_cb">
+<span class="sig-name descname"><span class="pre">commandTerminationHandler_cb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">con</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.commandTerminationHandler_cb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.discovery">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">discovery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">con</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.discovery" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.getDatamodel">
+<span class="sig-name descname"><span class="pre">getDatamodel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5102</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.getDatamodel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.getIED">
+<span class="sig-name descname"><span class="pre">getIED</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.getIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.getMMsValue">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getMMsValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">typeVal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typeval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.getMMsValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.getRef">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getRef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.getRef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.getRegisteredIEDs">
+<span class="sig-name descname"><span class="pre">getRegisteredIEDs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.getRegisteredIEDs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.get_controlObject">
+<span class="sig-name descname"><span class="pre">get_controlObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tupl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uri_ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.get_controlObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.operate">
+<span class="sig-name descname"><span class="pre">operate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.operate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.parseRef">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parseRef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.parseRef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.poll">
+<span class="sig-name descname"><span class="pre">poll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.poll" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.printDataDirectory">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">printDataDirectory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">con</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doRef</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.printDataDirectory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.printValue">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">printValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.printValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.printrefs">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">printrefs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.printrefs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.registerForReporting">
+<span class="sig-name descname"><span class="pre">registerForReporting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tupl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.registerForReporting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.registerReadValue">
+<span class="sig-name descname"><span class="pre">registerReadValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.registerReadValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.registerWriteValue">
+<span class="sig-name descname"><span class="pre">registerWriteValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.registerWriteValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.select">
+<span class="sig-name descname"><span class="pre">select</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.updateValueInModel">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">updateValueInModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">con</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.updateValueInModel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client61850.iec61850client.writeValue">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">writeValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">con</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client61850.iec61850client.writeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">gateway</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Aziz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/client61850.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

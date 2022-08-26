@@ -1,0 +1,2445 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>lib61850 module &#8212; gateway  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-lib61850">
+<span id="lib61850-module"></span><h1>lib61850 module<a class="headerlink" href="#module-lib61850" title="Permalink to this heading">¶</a></h1>
+<p>Wrapper for libiec61850_common_api.h</p>
+<p>Generated with:
+/home/user/.local/bin/ctypesgen -l /usr/local/lib/libiec61850.so -I /usr/local/include/libiec61850 src/common/inc/libiec61850_common_api.h src/common/inc/linked_list.h src/iec61850/inc/iec61850_client.h src/iec61850/inc/iec61850_common.h src/iec61850/inc/iec61850_server.h src/iec61850/inc/iec61850_model.h src/iec61850/inc/iec61850_cdc.h src/iec61850/inc/iec61850_dynamic_model.h src/iec61850/inc/iec61850_config_file_parser.h src/mms/inc/mms_value.h src/mms/inc/mms_common.h src/mms/inc/mms_types.h src/mms/inc/mms_type_spec.h src/mms/inc/mms_client_connection.h src/mms/inc/iso_connection_parameters.h -o lib61850.py</p>
+<p>Do not modify this file.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.AcseAuthenticationParameter">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">AcseAuthenticationParameter</span></span><a class="headerlink" href="#lib61850.AcseAuthenticationParameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sAcseAuthenticationParameter</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ClientConnection">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ClientConnection</span></span><a class="headerlink" href="#lib61850.ClientConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sClientConnection</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ClientDataSet">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ClientDataSet</span></span><a class="headerlink" href="#lib61850.ClientDataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sClientDataSet</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ClientGooseControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ClientGooseControlBlock</span></span><a class="headerlink" href="#lib61850.ClientGooseControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sClientGooseControlBlock</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ClientReport">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ClientReport</span></span><a class="headerlink" href="#lib61850.ClientReport" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sClientReport</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ClientReportControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ClientReportControlBlock</span></span><a class="headerlink" href="#lib61850.ClientReportControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sClientReportControlBlock</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ClientSVControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ClientSVControlBlock</span></span><a class="headerlink" href="#lib61850.ClientSVControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sClientSVControlBlock</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ControlObjectClient">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ControlObjectClient</span></span><a class="headerlink" href="#lib61850.ControlObjectClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sControlObjectClient</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.DarwinLibraryLoader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">DarwinLibraryLoader</span></span><a class="headerlink" href="#lib61850.DarwinLibraryLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#lib61850.LibraryLoader" title="lib61850.LibraryLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">LibraryLoader</span></code></a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.DarwinLibraryLoader.Lookup">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.DarwinLibraryLoader.Lookup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#lib61850.LibraryLoader.Lookup" title="lib61850.LibraryLoader.Lookup"><code class="xref py py-class docutils literal notranslate"><span class="pre">Lookup</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.DarwinLibraryLoader.Lookup.mode">
+<span class="sig-name descname"><span class="pre">mode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">256</span></em><a class="headerlink" href="#lib61850.DarwinLibraryLoader.Lookup.mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.DarwinLibraryLoader.getdirs">
+<span class="sig-name descname"><span class="pre">getdirs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">libname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.DarwinLibraryLoader.getdirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implements the dylib search as specified in Apple documentation:</p>
+<dl class="simple">
+<dt><a class="reference external" href="http://developer.apple.com/documentation/DeveloperTools/Conceptual/">http://developer.apple.com/documentation/DeveloperTools/Conceptual/</a></dt><dd><p>DynamicLibraries/Articles/DynamicLibraryUsageGuidelines.html</p>
+</dd>
+</dl>
+<p>Before commencing the standard search, the method first checks
+the bundle’s <code class="docutils literal notranslate"><span class="pre">Frameworks</span></code> directory if the application is running
+within a bundle (OS X .app).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.DarwinLibraryLoader.getplatformpaths">
+<span class="sig-name descname"><span class="pre">getplatformpaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">libname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.DarwinLibraryLoader.getplatformpaths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.DarwinLibraryLoader.name_formats">
+<span class="sig-name descname"><span class="pre">name_formats</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['lib%s.dylib',</span> <span class="pre">'lib%s.so',</span> <span class="pre">'lib%s.bundle',</span> <span class="pre">'%s.dylib',</span> <span class="pre">'%s.so',</span> <span class="pre">'%s.bundle',</span> <span class="pre">'%s']</span></em><a class="headerlink" href="#lib61850.DarwinLibraryLoader.name_formats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.DataAttribute">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">DataAttribute</span></span><a class="headerlink" href="#lib61850.DataAttribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sDataAttribute" title="lib61850.struct_sDataAttribute"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sDataAttribute</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.DataObject">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">DataObject</span></span><a class="headerlink" href="#lib61850.DataObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sDataObject" title="lib61850.struct_sDataObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sDataObject</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.DataSet">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">DataSet</span></span><a class="headerlink" href="#lib61850.DataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sDataSet" title="lib61850.struct_sDataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sDataSet</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.DataSetEntry">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">DataSetEntry</span></span><a class="headerlink" href="#lib61850.DataSetEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sDataSetEntry" title="lib61850.struct_sDataSetEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sDataSetEntry</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.FileDirectoryEntry">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">FileDirectoryEntry</span></span><a class="headerlink" href="#lib61850.FileDirectoryEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sFileDirectoryEntry</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.GSEControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">GSEControlBlock</span></span><a class="headerlink" href="#lib61850.GSEControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sGSEControlBlock" title="lib61850.struct_sGSEControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sGSEControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.IedConnection">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">IedConnection</span></span><a class="headerlink" href="#lib61850.IedConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sIedConnection</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.IedModel">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">IedModel</span></span><a class="headerlink" href="#lib61850.IedModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sIedModel" title="lib61850.struct_sIedModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sIedModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.IedServer">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">IedServer</span></span><a class="headerlink" href="#lib61850.IedServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sIedServer</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.IedServerConfig">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">IedServerConfig</span></span><a class="headerlink" href="#lib61850.IedServerConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sIedServerConfig</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.IsoApplicationReference">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">IsoApplicationReference</span></span><a class="headerlink" href="#lib61850.IsoApplicationReference" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_24" title="lib61850.struct_anon_24"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_24</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.IsoConnectionParameters">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">IsoConnectionParameters</span></span><a class="headerlink" href="#lib61850.IsoConnectionParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sIsoConnectionParameters</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ItuObjectIdentifier">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ItuObjectIdentifier</span></span><a class="headerlink" href="#lib61850.ItuObjectIdentifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_23" title="lib61850.struct_anon_23"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_23</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.LastApplError">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">LastApplError</span></span><a class="headerlink" href="#lib61850.LastApplError" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_41" title="lib61850.struct_anon_41"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_41</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.LibraryLoader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">LibraryLoader</span></span><a class="headerlink" href="#lib61850.LibraryLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.LibraryLoader.Lookup">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.LibraryLoader.Lookup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.LibraryLoader.Lookup.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calling_convention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cdecl'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.LibraryLoader.Lookup.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.LibraryLoader.Lookup.has">
+<span class="sig-name descname"><span class="pre">has</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calling_convention</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cdecl'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.LibraryLoader.Lookup.has" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.LibraryLoader.Lookup.mode">
+<span class="sig-name descname"><span class="pre">mode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#lib61850.LibraryLoader.Lookup.mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.LibraryLoader.getpaths">
+<span class="sig-name descname"><span class="pre">getpaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">libname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.LibraryLoader.getpaths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of paths where the library might be found.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.LibraryLoader.getplatformpaths">
+<span class="sig-name descname"><span class="pre">getplatformpaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">libname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.LibraryLoader.getplatformpaths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.LibraryLoader.name_formats">
+<span class="sig-name descname"><span class="pre">name_formats</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['%s']</span></em><a class="headerlink" href="#lib61850.LibraryLoader.name_formats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.LinkedList">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">LinkedList</span></span><a class="headerlink" href="#lib61850.LinkedList" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sLinkedList</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.Log">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">Log</span></span><a class="headerlink" href="#lib61850.Log" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLog" title="lib61850.struct_sLog"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLog</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.LogControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">LogControlBlock</span></span><a class="headerlink" href="#lib61850.LogControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLogControlBlock" title="lib61850.struct_sLogControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLogControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.LogStorage">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">LogStorage</span></span><a class="headerlink" href="#lib61850.LogStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sLogStorage</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.LogicalDevice">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">LogicalDevice</span></span><a class="headerlink" href="#lib61850.LogicalDevice" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLogicalDevice" title="lib61850.struct_sLogicalDevice"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLogicalDevice</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.LogicalNode">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">LogicalNode</span></span><a class="headerlink" href="#lib61850.LogicalNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLogicalNode" title="lib61850.struct_sLogicalNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLogicalNode</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsAccessSpecifier">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsAccessSpecifier</span></span><a class="headerlink" href="#lib61850.MmsAccessSpecifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsAccessSpecifier" title="lib61850.struct_sMmsAccessSpecifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsAccessSpecifier</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsConnection">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsConnection</span></span><a class="headerlink" href="#lib61850.MmsConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sMmsConnection</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsConnectionParameters">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsConnectionParameters</span></span><a class="headerlink" href="#lib61850.MmsConnectionParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsConnectionParameters" title="lib61850.struct_sMmsConnectionParameters"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsConnectionParameters</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsDomain">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsDomain</span></span><a class="headerlink" href="#lib61850.MmsDomain" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsDomain" title="lib61850.struct_sMmsDomain"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsDomain</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsJournalEntry">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsJournalEntry</span></span><a class="headerlink" href="#lib61850.MmsJournalEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sMmsJournalEntry</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsJournalVariable">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsJournalVariable</span></span><a class="headerlink" href="#lib61850.MmsJournalVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sMmsJournalVariable</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsNamedVariableList">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsNamedVariableList</span></span><a class="headerlink" href="#lib61850.MmsNamedVariableList" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sMmsNamedVariableList</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsNamedVariableListEntry">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsNamedVariableListEntry</span></span><a class="headerlink" href="#lib61850.MmsNamedVariableListEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sMmsAccessSpecifier</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsServer">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsServer</span></span><a class="headerlink" href="#lib61850.MmsServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sMmsServer</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsServerIdentity">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsServerIdentity</span></span><a class="headerlink" href="#lib61850.MmsServerIdentity" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_39" title="lib61850.struct_anon_39"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_39</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsValue">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsValue</span></span><a class="headerlink" href="#lib61850.MmsValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsValue" title="lib61850.struct_sMmsValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsValue</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsVariableAccessSpecification">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsVariableAccessSpecification</span></span><a class="headerlink" href="#lib61850.MmsVariableAccessSpecification" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_22" title="lib61850.struct_anon_22"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_22</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.MmsVariableSpecification">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MmsVariableSpecification</span></span><a class="headerlink" href="#lib61850.MmsVariableSpecification" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsVariableSpecification" title="lib61850.struct_sMmsVariableSpecification"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsVariableSpecification</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ModelNode">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ModelNode</span></span><a class="headerlink" href="#lib61850.ModelNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sModelNode" title="lib61850.struct_sModelNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sModelNode</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.MutableString">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">MutableString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.MutableString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#lib61850.UserString" title="lib61850.UserString"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code></a></p>
+<p>mutable string objects</p>
+<p>Python strings are immutable objects.  This has the advantage, that
+strings may be used as dictionary keys.  If this property isn’t needed
+and you insist on changing string values in place instead, you may cheat
+and use MutableString.</p>
+<p>But the purpose of this class is an educational one: to prevent
+people from inventing their own mutable string class derived
+from UserString and than forget thereby to remove (override) the
+__hash__ method inherited from UserString.  This would lead to
+errors that would be very hard to track down.</p>
+<p>A faster and better solution is to rewrite your program using lists.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.MutableString.immutable">
+<span class="sig-name descname"><span class="pre">immutable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.MutableString.immutable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.PSelector">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">PSelector</span></span><a class="headerlink" href="#lib61850.PSelector" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_38" title="lib61850.struct_anon_38"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_38</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.PhyComAddress">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">PhyComAddress</span></span><a class="headerlink" href="#lib61850.PhyComAddress" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_27" title="lib61850.struct_anon_27"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_27</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.PosixLibraryLoader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">PosixLibraryLoader</span></span><a class="headerlink" href="#lib61850.PosixLibraryLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#lib61850.LibraryLoader" title="lib61850.LibraryLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">LibraryLoader</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.PosixLibraryLoader.getplatformpaths">
+<span class="sig-name descname"><span class="pre">getplatformpaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">libname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.PosixLibraryLoader.getplatformpaths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.ReportControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ReportControlBlock</span></span><a class="headerlink" href="#lib61850.ReportControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sReportControlBlock" title="lib61850.struct_sReportControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sReportControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib61850.ReturnString">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ReturnString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arguments</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.ReturnString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.SSelector">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">SSelector</span></span><a class="headerlink" href="#lib61850.SSelector" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_37" title="lib61850.struct_anon_37"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_37</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.SVControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">SVControlBlock</span></span><a class="headerlink" href="#lib61850.SVControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sSVControlBlock" title="lib61850.struct_sSVControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sSVControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.SettingGroupControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">SettingGroupControlBlock</span></span><a class="headerlink" href="#lib61850.SettingGroupControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sSettingGroupControlBlock" title="lib61850.struct_sSettingGroupControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sSettingGroupControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.String">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">String</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.String" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#lib61850.MutableString" title="lib61850.MutableString"><code class="xref py py-class docutils literal notranslate"><span class="pre">MutableString</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Union</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.String.data">
+<span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#lib61850.String.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure/Union member</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.String.from_param">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.String.from_param" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a Python object into a function call parameter.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.String.raw">
+<span class="sig-name descname"><span class="pre">raw</span></span><a class="headerlink" href="#lib61850.String.raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure/Union member</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.TLSConfiguration">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">TLSConfiguration</span></span><a class="headerlink" href="#lib61850.TLSConfiguration" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">LP_struct_sTLSConfiguration</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.TSelector">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">TSelector</span></span><a class="headerlink" href="#lib61850.TSelector" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_anon_36" title="lib61850.struct_anon_36"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_anon_36</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.Timestamp">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">Timestamp</span></span><a class="headerlink" href="#lib61850.Timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.union_anon_31" title="lib61850.union_anon_31"><code class="xref py py-class docutils literal notranslate"><span class="pre">union_anon_31</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib61850.UNCHECKED">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">UNCHECKED</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UNCHECKED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.UserString">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">UserString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.capitalize">
+<span class="sig-name descname"><span class="pre">capitalize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.capitalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.center">
+<span class="sig-name descname"><span class="pre">center</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.center" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.count">
+<span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9223372036854775807</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.decode">
+<span class="sig-name descname"><span class="pre">decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.encode">
+<span class="sig-name descname"><span class="pre">encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.encode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.endswith">
+<span class="sig-name descname"><span class="pre">endswith</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suffix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9223372036854775807</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.endswith" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.expandtabs">
+<span class="sig-name descname"><span class="pre">expandtabs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tabsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.expandtabs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.find">
+<span class="sig-name descname"><span class="pre">find</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9223372036854775807</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.index">
+<span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9223372036854775807</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.isalnum">
+<span class="sig-name descname"><span class="pre">isalnum</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.isalnum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.isalpha">
+<span class="sig-name descname"><span class="pre">isalpha</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.isalpha" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.isdecimal">
+<span class="sig-name descname"><span class="pre">isdecimal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.isdecimal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.isdigit">
+<span class="sig-name descname"><span class="pre">isdigit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.isdigit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.islower">
+<span class="sig-name descname"><span class="pre">islower</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.islower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.isnumeric">
+<span class="sig-name descname"><span class="pre">isnumeric</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.isnumeric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.isspace">
+<span class="sig-name descname"><span class="pre">isspace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.isspace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.istitle">
+<span class="sig-name descname"><span class="pre">istitle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.istitle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.isupper">
+<span class="sig-name descname"><span class="pre">isupper</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.isupper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.join">
+<span class="sig-name descname"><span class="pre">join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.join" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.ljust">
+<span class="sig-name descname"><span class="pre">ljust</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.ljust" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.lower">
+<span class="sig-name descname"><span class="pre">lower</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.lstrip">
+<span class="sig-name descname"><span class="pre">lstrip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.lstrip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.partition">
+<span class="sig-name descname"><span class="pre">partition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sep</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.partition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.replace">
+<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">old</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxsplit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.replace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.rfind">
+<span class="sig-name descname"><span class="pre">rfind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9223372036854775807</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.rfind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.rindex">
+<span class="sig-name descname"><span class="pre">rindex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9223372036854775807</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.rindex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.rjust">
+<span class="sig-name descname"><span class="pre">rjust</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.rjust" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.rpartition">
+<span class="sig-name descname"><span class="pre">rpartition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sep</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.rpartition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.rsplit">
+<span class="sig-name descname"><span class="pre">rsplit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxsplit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.rsplit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.rstrip">
+<span class="sig-name descname"><span class="pre">rstrip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.rstrip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.split">
+<span class="sig-name descname"><span class="pre">split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxsplit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.splitlines">
+<span class="sig-name descname"><span class="pre">splitlines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keepends</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.splitlines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.startswith">
+<span class="sig-name descname"><span class="pre">startswith</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9223372036854775807</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.startswith" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.strip">
+<span class="sig-name descname"><span class="pre">strip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.strip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.swapcase">
+<span class="sig-name descname"><span class="pre">swapcase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.swapcase" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.title">
+<span class="sig-name descname"><span class="pre">title</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.translate">
+<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.translate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.upper">
+<span class="sig-name descname"><span class="pre">upper</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib61850.UserString.zfill">
+<span class="sig-name descname"><span class="pre">zfill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.UserString.zfill" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.WindowsLibraryLoader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">WindowsLibraryLoader</span></span><a class="headerlink" href="#lib61850.WindowsLibraryLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#lib61850.LibraryLoader" title="lib61850.LibraryLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">LibraryLoader</span></code></a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.WindowsLibraryLoader.Lookup">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.WindowsLibraryLoader.Lookup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#lib61850.LibraryLoader.Lookup" title="lib61850.LibraryLoader.Lookup"><code class="xref py py-class docutils literal notranslate"><span class="pre">Lookup</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.WindowsLibraryLoader.name_formats">
+<span class="sig-name descname"><span class="pre">name_formats</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['%s.dll',</span> <span class="pre">'lib%s.dll',</span> <span class="pre">'%slib.dll',</span> <span class="pre">'%s']</span></em><a class="headerlink" href="#lib61850.WindowsLibraryLoader.name_formats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib61850.add_library_search_dirs">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">add_library_search_dirs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other_dirs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.add_library_search_dirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add libraries to search paths.
+If library paths are relative, convert them to absolute with respect to this
+file’s directory</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib61850.ord_if_char">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">ord_if_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib61850.ord_if_char" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple helper used for casts to simple builtin types:  if the argument is a
+string type, it will be converted to it’s ordinal value.</p>
+<p>This function will raise an exception if the argument is string with more
+than one characters.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sAcseAuthenticationParameter">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sAcseAuthenticationParameter</span></span><a class="headerlink" href="#lib61850.sAcseAuthenticationParameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sAcseAuthenticationParameter" title="lib61850.struct_sAcseAuthenticationParameter"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sAcseAuthenticationParameter</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sClientConnection">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sClientConnection</span></span><a class="headerlink" href="#lib61850.sClientConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sClientConnection" title="lib61850.struct_sClientConnection"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sClientConnection</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sClientDataSet">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sClientDataSet</span></span><a class="headerlink" href="#lib61850.sClientDataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sClientDataSet" title="lib61850.struct_sClientDataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sClientDataSet</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sClientGooseControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sClientGooseControlBlock</span></span><a class="headerlink" href="#lib61850.sClientGooseControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sClientGooseControlBlock" title="lib61850.struct_sClientGooseControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sClientGooseControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sClientReport">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sClientReport</span></span><a class="headerlink" href="#lib61850.sClientReport" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sClientReport" title="lib61850.struct_sClientReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sClientReport</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sClientReportControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sClientReportControlBlock</span></span><a class="headerlink" href="#lib61850.sClientReportControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sClientReportControlBlock" title="lib61850.struct_sClientReportControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sClientReportControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sClientSVControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sClientSVControlBlock</span></span><a class="headerlink" href="#lib61850.sClientSVControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sClientSVControlBlock" title="lib61850.struct_sClientSVControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sClientSVControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sControlObjectClient">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sControlObjectClient</span></span><a class="headerlink" href="#lib61850.sControlObjectClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sControlObjectClient" title="lib61850.struct_sControlObjectClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sControlObjectClient</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sDataAttribute">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sDataAttribute</span></span><a class="headerlink" href="#lib61850.sDataAttribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sDataAttribute" title="lib61850.struct_sDataAttribute"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sDataAttribute</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sDataObject">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sDataObject</span></span><a class="headerlink" href="#lib61850.sDataObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sDataObject" title="lib61850.struct_sDataObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sDataObject</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sDataSet">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sDataSet</span></span><a class="headerlink" href="#lib61850.sDataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sDataSet" title="lib61850.struct_sDataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sDataSet</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sDataSetEntry">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sDataSetEntry</span></span><a class="headerlink" href="#lib61850.sDataSetEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sDataSetEntry" title="lib61850.struct_sDataSetEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sDataSetEntry</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sFileDirectoryEntry">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sFileDirectoryEntry</span></span><a class="headerlink" href="#lib61850.sFileDirectoryEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sFileDirectoryEntry" title="lib61850.struct_sFileDirectoryEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sFileDirectoryEntry</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sGSEControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sGSEControlBlock</span></span><a class="headerlink" href="#lib61850.sGSEControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sGSEControlBlock" title="lib61850.struct_sGSEControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sGSEControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sIedConnection">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sIedConnection</span></span><a class="headerlink" href="#lib61850.sIedConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sIedConnection" title="lib61850.struct_sIedConnection"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sIedConnection</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sIedModel">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sIedModel</span></span><a class="headerlink" href="#lib61850.sIedModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sIedModel" title="lib61850.struct_sIedModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sIedModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sIedServer">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sIedServer</span></span><a class="headerlink" href="#lib61850.sIedServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sIedServer" title="lib61850.struct_sIedServer"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sIedServer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sIedServerConfig">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sIedServerConfig</span></span><a class="headerlink" href="#lib61850.sIedServerConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sIedServerConfig" title="lib61850.struct_sIedServerConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sIedServerConfig</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sIsoConnectionParameters">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sIsoConnectionParameters</span></span><a class="headerlink" href="#lib61850.sIsoConnectionParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sIsoConnectionParameters" title="lib61850.struct_sIsoConnectionParameters"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sIsoConnectionParameters</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sLinkedList">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sLinkedList</span></span><a class="headerlink" href="#lib61850.sLinkedList" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLinkedList" title="lib61850.struct_sLinkedList"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLinkedList</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sLog">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sLog</span></span><a class="headerlink" href="#lib61850.sLog" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLog" title="lib61850.struct_sLog"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLog</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sLogControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sLogControlBlock</span></span><a class="headerlink" href="#lib61850.sLogControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLogControlBlock" title="lib61850.struct_sLogControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLogControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sLogicalDevice">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sLogicalDevice</span></span><a class="headerlink" href="#lib61850.sLogicalDevice" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLogicalDevice" title="lib61850.struct_sLogicalDevice"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLogicalDevice</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sLogicalNode">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sLogicalNode</span></span><a class="headerlink" href="#lib61850.sLogicalNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sLogicalNode" title="lib61850.struct_sLogicalNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sLogicalNode</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsAccessSpecifier">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsAccessSpecifier</span></span><a class="headerlink" href="#lib61850.sMmsAccessSpecifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsAccessSpecifier" title="lib61850.struct_sMmsAccessSpecifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsAccessSpecifier</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsArray">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsArray</span></span><a class="headerlink" href="#lib61850.sMmsArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsArray" title="lib61850.struct_sMmsArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsArray</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsConnection">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsConnection</span></span><a class="headerlink" href="#lib61850.sMmsConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsConnection" title="lib61850.struct_sMmsConnection"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsConnection</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsConnectionParameters">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsConnectionParameters</span></span><a class="headerlink" href="#lib61850.sMmsConnectionParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsConnectionParameters" title="lib61850.struct_sMmsConnectionParameters"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsConnectionParameters</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsDomain">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsDomain</span></span><a class="headerlink" href="#lib61850.sMmsDomain" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsDomain" title="lib61850.struct_sMmsDomain"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsDomain</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsFloat">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsFloat</span></span><a class="headerlink" href="#lib61850.sMmsFloat" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsFloat" title="lib61850.struct_sMmsFloat"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsFloat</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsJournalEntry">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsJournalEntry</span></span><a class="headerlink" href="#lib61850.sMmsJournalEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsJournalEntry" title="lib61850.struct_sMmsJournalEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsJournalEntry</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsJournalVariable">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsJournalVariable</span></span><a class="headerlink" href="#lib61850.sMmsJournalVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsJournalVariable" title="lib61850.struct_sMmsJournalVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsJournalVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsNamedVariableList">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsNamedVariableList</span></span><a class="headerlink" href="#lib61850.sMmsNamedVariableList" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsNamedVariableList" title="lib61850.struct_sMmsNamedVariableList"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsNamedVariableList</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsStructure">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsStructure</span></span><a class="headerlink" href="#lib61850.sMmsStructure" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsStructure" title="lib61850.struct_sMmsStructure"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsStructure</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsValue">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsValue</span></span><a class="headerlink" href="#lib61850.sMmsValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsValue" title="lib61850.struct_sMmsValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsValue</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sMmsVariableSpecification">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sMmsVariableSpecification</span></span><a class="headerlink" href="#lib61850.sMmsVariableSpecification" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sMmsVariableSpecification" title="lib61850.struct_sMmsVariableSpecification"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sMmsVariableSpecification</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sModelNode">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sModelNode</span></span><a class="headerlink" href="#lib61850.sModelNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sModelNode" title="lib61850.struct_sModelNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sModelNode</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sReportControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sReportControlBlock</span></span><a class="headerlink" href="#lib61850.sReportControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sReportControlBlock" title="lib61850.struct_sReportControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sReportControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sSVControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sSVControlBlock</span></span><a class="headerlink" href="#lib61850.sSVControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sSVControlBlock" title="lib61850.struct_sSVControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sSVControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.sSettingGroupControlBlock">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">sSettingGroupControlBlock</span></span><a class="headerlink" href="#lib61850.sSettingGroupControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.struct_sSettingGroupControlBlock" title="lib61850.struct_sSettingGroupControlBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">struct_sSettingGroupControlBlock</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_22">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_22</span></span><a class="headerlink" href="#lib61850.struct_anon_22" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_22.arrayIndex">
+<span class="sig-name descname"><span class="pre">arrayIndex</span></span><a class="headerlink" href="#lib61850.struct_anon_22.arrayIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_22.componentName">
+<span class="sig-name descname"><span class="pre">componentName</span></span><a class="headerlink" href="#lib61850.struct_anon_22.componentName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_22.domainId">
+<span class="sig-name descname"><span class="pre">domainId</span></span><a class="headerlink" href="#lib61850.struct_anon_22.domainId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_22.itemId">
+<span class="sig-name descname"><span class="pre">itemId</span></span><a class="headerlink" href="#lib61850.struct_anon_22.itemId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_23">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_23</span></span><a class="headerlink" href="#lib61850.struct_anon_23" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_23.arc">
+<span class="sig-name descname"><span class="pre">arc</span></span><a class="headerlink" href="#lib61850.struct_anon_23.arc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_23.arcCount">
+<span class="sig-name descname"><span class="pre">arcCount</span></span><a class="headerlink" href="#lib61850.struct_anon_23.arcCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_24">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_24</span></span><a class="headerlink" href="#lib61850.struct_anon_24" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_24.aeQualifier">
+<span class="sig-name descname"><span class="pre">aeQualifier</span></span><a class="headerlink" href="#lib61850.struct_anon_24.aeQualifier" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_24.apTitle">
+<span class="sig-name descname"><span class="pre">apTitle</span></span><a class="headerlink" href="#lib61850.struct_anon_24.apTitle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_27">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_27</span></span><a class="headerlink" href="#lib61850.struct_anon_27" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_27.appId">
+<span class="sig-name descname"><span class="pre">appId</span></span><a class="headerlink" href="#lib61850.struct_anon_27.appId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_27.dstAddress">
+<span class="sig-name descname"><span class="pre">dstAddress</span></span><a class="headerlink" href="#lib61850.struct_anon_27.dstAddress" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_27.vlanId">
+<span class="sig-name descname"><span class="pre">vlanId</span></span><a class="headerlink" href="#lib61850.struct_anon_27.vlanId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_27.vlanPriority">
+<span class="sig-name descname"><span class="pre">vlanPriority</span></span><a class="headerlink" href="#lib61850.struct_anon_27.vlanPriority" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_33">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_33</span></span><a class="headerlink" href="#lib61850.struct_anon_33" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_33.octetString">
+<span class="sig-name descname"><span class="pre">octetString</span></span><a class="headerlink" href="#lib61850.struct_anon_33.octetString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_33.passwordLength">
+<span class="sig-name descname"><span class="pre">passwordLength</span></span><a class="headerlink" href="#lib61850.struct_anon_33.passwordLength" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_34">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_34</span></span><a class="headerlink" href="#lib61850.struct_anon_34" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_34.buf">
+<span class="sig-name descname"><span class="pre">buf</span></span><a class="headerlink" href="#lib61850.struct_anon_34.buf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_34.length">
+<span class="sig-name descname"><span class="pre">length</span></span><a class="headerlink" href="#lib61850.struct_anon_34.length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_36">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_36</span></span><a class="headerlink" href="#lib61850.struct_anon_36" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_36.size">
+<span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#lib61850.struct_anon_36.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_36.value">
+<span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#lib61850.struct_anon_36.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_37">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_37</span></span><a class="headerlink" href="#lib61850.struct_anon_37" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_37.size">
+<span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#lib61850.struct_anon_37.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_37.value">
+<span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#lib61850.struct_anon_37.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_38">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_38</span></span><a class="headerlink" href="#lib61850.struct_anon_38" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_38.size">
+<span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#lib61850.struct_anon_38.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_38.value">
+<span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#lib61850.struct_anon_38.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_39">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_39</span></span><a class="headerlink" href="#lib61850.struct_anon_39" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_39.modelName">
+<span class="sig-name descname"><span class="pre">modelName</span></span><a class="headerlink" href="#lib61850.struct_anon_39.modelName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_39.revision">
+<span class="sig-name descname"><span class="pre">revision</span></span><a class="headerlink" href="#lib61850.struct_anon_39.revision" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_39.vendorName">
+<span class="sig-name descname"><span class="pre">vendorName</span></span><a class="headerlink" href="#lib61850.struct_anon_39.vendorName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_anon_41">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_anon_41</span></span><a class="headerlink" href="#lib61850.struct_anon_41" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_41.addCause">
+<span class="sig-name descname"><span class="pre">addCause</span></span><a class="headerlink" href="#lib61850.struct_anon_41.addCause" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_41.ctlNum">
+<span class="sig-name descname"><span class="pre">ctlNum</span></span><a class="headerlink" href="#lib61850.struct_anon_41.ctlNum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_anon_41.error">
+<span class="sig-name descname"><span class="pre">error</span></span><a class="headerlink" href="#lib61850.struct_anon_41.error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sAcseAuthenticationParameter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sAcseAuthenticationParameter</span></span><a class="headerlink" href="#lib61850.struct_sAcseAuthenticationParameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sAcseAuthenticationParameter.mechanism">
+<span class="sig-name descname"><span class="pre">mechanism</span></span><a class="headerlink" href="#lib61850.struct_sAcseAuthenticationParameter.mechanism" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sAcseAuthenticationParameter.value">
+<span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#lib61850.struct_sAcseAuthenticationParameter.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sClientConnection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sClientConnection</span></span><a class="headerlink" href="#lib61850.struct_sClientConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sClientDataSet">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sClientDataSet</span></span><a class="headerlink" href="#lib61850.struct_sClientDataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sClientGooseControlBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sClientGooseControlBlock</span></span><a class="headerlink" href="#lib61850.struct_sClientGooseControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sClientReport">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sClientReport</span></span><a class="headerlink" href="#lib61850.struct_sClientReport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sClientReportControlBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sClientReportControlBlock</span></span><a class="headerlink" href="#lib61850.struct_sClientReportControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sClientSVControlBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sClientSVControlBlock</span></span><a class="headerlink" href="#lib61850.struct_sClientSVControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sControlObjectClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sControlObjectClient</span></span><a class="headerlink" href="#lib61850.struct_sControlObjectClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sDataAttribute</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.elementCount">
+<span class="sig-name descname"><span class="pre">elementCount</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.elementCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.fc">
+<span class="sig-name descname"><span class="pre">fc</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.fc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.firstChild">
+<span class="sig-name descname"><span class="pre">firstChild</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.firstChild" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.mmsValue">
+<span class="sig-name descname"><span class="pre">mmsValue</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.mmsValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.modelType">
+<span class="sig-name descname"><span class="pre">modelType</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.modelType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.sAddr">
+<span class="sig-name descname"><span class="pre">sAddr</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.sAddr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.triggerOptions">
+<span class="sig-name descname"><span class="pre">triggerOptions</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.triggerOptions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataAttribute.type">
+<span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#lib61850.struct_sDataAttribute.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sDataObject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sDataObject</span></span><a class="headerlink" href="#lib61850.struct_sDataObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataObject.elementCount">
+<span class="sig-name descname"><span class="pre">elementCount</span></span><a class="headerlink" href="#lib61850.struct_sDataObject.elementCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataObject.firstChild">
+<span class="sig-name descname"><span class="pre">firstChild</span></span><a class="headerlink" href="#lib61850.struct_sDataObject.firstChild" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataObject.modelType">
+<span class="sig-name descname"><span class="pre">modelType</span></span><a class="headerlink" href="#lib61850.struct_sDataObject.modelType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataObject.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sDataObject.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataObject.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sDataObject.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataObject.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sDataObject.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSet">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sDataSet</span></span><a class="headerlink" href="#lib61850.struct_sDataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSet.elementCount">
+<span class="sig-name descname"><span class="pre">elementCount</span></span><a class="headerlink" href="#lib61850.struct_sDataSet.elementCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSet.fcdas">
+<span class="sig-name descname"><span class="pre">fcdas</span></span><a class="headerlink" href="#lib61850.struct_sDataSet.fcdas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSet.logicalDeviceName">
+<span class="sig-name descname"><span class="pre">logicalDeviceName</span></span><a class="headerlink" href="#lib61850.struct_sDataSet.logicalDeviceName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSet.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sDataSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSet.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sDataSet.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSetEntry">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sDataSetEntry</span></span><a class="headerlink" href="#lib61850.struct_sDataSetEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSetEntry.componentName">
+<span class="sig-name descname"><span class="pre">componentName</span></span><a class="headerlink" href="#lib61850.struct_sDataSetEntry.componentName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSetEntry.index">
+<span class="sig-name descname"><span class="pre">index</span></span><a class="headerlink" href="#lib61850.struct_sDataSetEntry.index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSetEntry.isLDNameDynamicallyAllocated">
+<span class="sig-name descname"><span class="pre">isLDNameDynamicallyAllocated</span></span><a class="headerlink" href="#lib61850.struct_sDataSetEntry.isLDNameDynamicallyAllocated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSetEntry.logicalDeviceName">
+<span class="sig-name descname"><span class="pre">logicalDeviceName</span></span><a class="headerlink" href="#lib61850.struct_sDataSetEntry.logicalDeviceName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSetEntry.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sDataSetEntry.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSetEntry.value">
+<span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#lib61850.struct_sDataSetEntry.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sDataSetEntry.variableName">
+<span class="sig-name descname"><span class="pre">variableName</span></span><a class="headerlink" href="#lib61850.struct_sDataSetEntry.variableName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sFileDirectoryEntry">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sFileDirectoryEntry</span></span><a class="headerlink" href="#lib61850.struct_sFileDirectoryEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sGSEControlBlock</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.address">
+<span class="sig-name descname"><span class="pre">address</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.address" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.appId">
+<span class="sig-name descname"><span class="pre">appId</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.appId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.confRev">
+<span class="sig-name descname"><span class="pre">confRev</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.confRev" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.dataSetName">
+<span class="sig-name descname"><span class="pre">dataSetName</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.dataSetName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.fixedOffs">
+<span class="sig-name descname"><span class="pre">fixedOffs</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.fixedOffs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.maxTime">
+<span class="sig-name descname"><span class="pre">maxTime</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.maxTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.minTime">
+<span class="sig-name descname"><span class="pre">minTime</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.minTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sGSEControlBlock.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sGSEControlBlock.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sIedConnection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sIedConnection</span></span><a class="headerlink" href="#lib61850.struct_sIedConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sIedModel</span></span><a class="headerlink" href="#lib61850.struct_sIedModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.dataSets">
+<span class="sig-name descname"><span class="pre">dataSets</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.dataSets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.firstChild">
+<span class="sig-name descname"><span class="pre">firstChild</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.firstChild" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.gseCBs">
+<span class="sig-name descname"><span class="pre">gseCBs</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.gseCBs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.initializer">
+<span class="sig-name descname"><span class="pre">initializer</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.initializer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.lcbs">
+<span class="sig-name descname"><span class="pre">lcbs</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.lcbs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.logs">
+<span class="sig-name descname"><span class="pre">logs</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.logs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.rcbs">
+<span class="sig-name descname"><span class="pre">rcbs</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.rcbs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.sgcbs">
+<span class="sig-name descname"><span class="pre">sgcbs</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.sgcbs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedModel.svCBs">
+<span class="sig-name descname"><span class="pre">svCBs</span></span><a class="headerlink" href="#lib61850.struct_sIedModel.svCBs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sIedServer</span></span><a class="headerlink" href="#lib61850.struct_sIedServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sIedServerConfig</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.edition">
+<span class="sig-name descname"><span class="pre">edition</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.edition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.enableDynamicDataSetService">
+<span class="sig-name descname"><span class="pre">enableDynamicDataSetService</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.enableDynamicDataSetService" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.enableFileService">
+<span class="sig-name descname"><span class="pre">enableFileService</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.enableFileService" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.enableLogService">
+<span class="sig-name descname"><span class="pre">enableLogService</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.enableLogService" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.fileServiceBasepath">
+<span class="sig-name descname"><span class="pre">fileServiceBasepath</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.fileServiceBasepath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.maxAssociationSpecificDataSets">
+<span class="sig-name descname"><span class="pre">maxAssociationSpecificDataSets</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.maxAssociationSpecificDataSets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.maxDataSetEntries">
+<span class="sig-name descname"><span class="pre">maxDataSetEntries</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.maxDataSetEntries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.maxDomainSpecificDataSets">
+<span class="sig-name descname"><span class="pre">maxDomainSpecificDataSets</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.maxDomainSpecificDataSets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.maxMmsConnections">
+<span class="sig-name descname"><span class="pre">maxMmsConnections</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.maxMmsConnections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.reportBufferSize">
+<span class="sig-name descname"><span class="pre">reportBufferSize</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.reportBufferSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIedServerConfig.reportBufferSizeURCBs">
+<span class="sig-name descname"><span class="pre">reportBufferSizeURCBs</span></span><a class="headerlink" href="#lib61850.struct_sIedServerConfig.reportBufferSizeURCBs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sIsoConnectionParameters</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.acseAuthParameter">
+<span class="sig-name descname"><span class="pre">acseAuthParameter</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.acseAuthParameter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.hostname">
+<span class="sig-name descname"><span class="pre">hostname</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.hostname" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.localAEQualifier">
+<span class="sig-name descname"><span class="pre">localAEQualifier</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.localAEQualifier" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.localApTitle">
+<span class="sig-name descname"><span class="pre">localApTitle</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.localApTitle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.localApTitleLen">
+<span class="sig-name descname"><span class="pre">localApTitleLen</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.localApTitleLen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.localPSelector">
+<span class="sig-name descname"><span class="pre">localPSelector</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.localPSelector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.localSSelector">
+<span class="sig-name descname"><span class="pre">localSSelector</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.localSSelector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.localTSelector">
+<span class="sig-name descname"><span class="pre">localTSelector</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.localTSelector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.remoteAEQualifier">
+<span class="sig-name descname"><span class="pre">remoteAEQualifier</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.remoteAEQualifier" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.remoteApTitle">
+<span class="sig-name descname"><span class="pre">remoteApTitle</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.remoteApTitle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.remoteApTitleLen">
+<span class="sig-name descname"><span class="pre">remoteApTitleLen</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.remoteApTitleLen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.remotePSelector">
+<span class="sig-name descname"><span class="pre">remotePSelector</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.remotePSelector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.remoteSSelector">
+<span class="sig-name descname"><span class="pre">remoteSSelector</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.remoteSSelector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.remoteTSelector">
+<span class="sig-name descname"><span class="pre">remoteTSelector</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.remoteTSelector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sIsoConnectionParameters.tcpPort">
+<span class="sig-name descname"><span class="pre">tcpPort</span></span><a class="headerlink" href="#lib61850.struct_sIsoConnectionParameters.tcpPort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sLinkedList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sLinkedList</span></span><a class="headerlink" href="#lib61850.struct_sLinkedList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLinkedList.data">
+<span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#lib61850.struct_sLinkedList.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLinkedList.next">
+<span class="sig-name descname"><span class="pre">next</span></span><a class="headerlink" href="#lib61850.struct_sLinkedList.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sLog">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sLog</span></span><a class="headerlink" href="#lib61850.struct_sLog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLog.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sLog.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLog.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sLog.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLog.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sLog.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sLogControlBlock</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.dataSetName">
+<span class="sig-name descname"><span class="pre">dataSetName</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.dataSetName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.intPeriod">
+<span class="sig-name descname"><span class="pre">intPeriod</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.intPeriod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.logEna">
+<span class="sig-name descname"><span class="pre">logEna</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.logEna" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.logRef">
+<span class="sig-name descname"><span class="pre">logRef</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.logRef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.reasonCode">
+<span class="sig-name descname"><span class="pre">reasonCode</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.reasonCode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogControlBlock.trgOps">
+<span class="sig-name descname"><span class="pre">trgOps</span></span><a class="headerlink" href="#lib61850.struct_sLogControlBlock.trgOps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sLogStorage</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage.addEntry">
+<span class="sig-name descname"><span class="pre">addEntry</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage.addEntry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage.addEntryData">
+<span class="sig-name descname"><span class="pre">addEntryData</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage.addEntryData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage.destroy">
+<span class="sig-name descname"><span class="pre">destroy</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage.destroy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage.getEntries">
+<span class="sig-name descname"><span class="pre">getEntries</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage.getEntries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage.getEntriesAfter">
+<span class="sig-name descname"><span class="pre">getEntriesAfter</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage.getEntriesAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage.getOldestAndNewestEntries">
+<span class="sig-name descname"><span class="pre">getOldestAndNewestEntries</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage.getOldestAndNewestEntries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage.instanceData">
+<span class="sig-name descname"><span class="pre">instanceData</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage.instanceData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogStorage.maxLogEntries">
+<span class="sig-name descname"><span class="pre">maxLogEntries</span></span><a class="headerlink" href="#lib61850.struct_sLogStorage.maxLogEntries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalDevice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sLogicalDevice</span></span><a class="headerlink" href="#lib61850.struct_sLogicalDevice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalDevice.firstChild">
+<span class="sig-name descname"><span class="pre">firstChild</span></span><a class="headerlink" href="#lib61850.struct_sLogicalDevice.firstChild" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalDevice.modelType">
+<span class="sig-name descname"><span class="pre">modelType</span></span><a class="headerlink" href="#lib61850.struct_sLogicalDevice.modelType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalDevice.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sLogicalDevice.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalDevice.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sLogicalDevice.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalDevice.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sLogicalDevice.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sLogicalNode</span></span><a class="headerlink" href="#lib61850.struct_sLogicalNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalNode.firstChild">
+<span class="sig-name descname"><span class="pre">firstChild</span></span><a class="headerlink" href="#lib61850.struct_sLogicalNode.firstChild" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalNode.modelType">
+<span class="sig-name descname"><span class="pre">modelType</span></span><a class="headerlink" href="#lib61850.struct_sLogicalNode.modelType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalNode.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sLogicalNode.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalNode.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sLogicalNode.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sLogicalNode.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sLogicalNode.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsAccessSpecifier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsAccessSpecifier</span></span><a class="headerlink" href="#lib61850.struct_sMmsAccessSpecifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsAccessSpecifier.arrayIndex">
+<span class="sig-name descname"><span class="pre">arrayIndex</span></span><a class="headerlink" href="#lib61850.struct_sMmsAccessSpecifier.arrayIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsAccessSpecifier.componentName">
+<span class="sig-name descname"><span class="pre">componentName</span></span><a class="headerlink" href="#lib61850.struct_sMmsAccessSpecifier.componentName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsAccessSpecifier.domain">
+<span class="sig-name descname"><span class="pre">domain</span></span><a class="headerlink" href="#lib61850.struct_sMmsAccessSpecifier.domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsAccessSpecifier.variableName">
+<span class="sig-name descname"><span class="pre">variableName</span></span><a class="headerlink" href="#lib61850.struct_sMmsAccessSpecifier.variableName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsArray">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsArray</span></span><a class="headerlink" href="#lib61850.struct_sMmsArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsArray.elementCount">
+<span class="sig-name descname"><span class="pre">elementCount</span></span><a class="headerlink" href="#lib61850.struct_sMmsArray.elementCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsArray.elementTypeSpec">
+<span class="sig-name descname"><span class="pre">elementTypeSpec</span></span><a class="headerlink" href="#lib61850.struct_sMmsArray.elementTypeSpec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsConnection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsConnection</span></span><a class="headerlink" href="#lib61850.struct_sMmsConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsConnectionParameters">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsConnectionParameters</span></span><a class="headerlink" href="#lib61850.struct_sMmsConnectionParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsConnectionParameters.dataStructureNestingLevel">
+<span class="sig-name descname"><span class="pre">dataStructureNestingLevel</span></span><a class="headerlink" href="#lib61850.struct_sMmsConnectionParameters.dataStructureNestingLevel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsConnectionParameters.maxPduSize">
+<span class="sig-name descname"><span class="pre">maxPduSize</span></span><a class="headerlink" href="#lib61850.struct_sMmsConnectionParameters.maxPduSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsConnectionParameters.maxServOutstandingCalled">
+<span class="sig-name descname"><span class="pre">maxServOutstandingCalled</span></span><a class="headerlink" href="#lib61850.struct_sMmsConnectionParameters.maxServOutstandingCalled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsConnectionParameters.maxServOutstandingCalling">
+<span class="sig-name descname"><span class="pre">maxServOutstandingCalling</span></span><a class="headerlink" href="#lib61850.struct_sMmsConnectionParameters.maxServOutstandingCalling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsConnectionParameters.servicesSupported">
+<span class="sig-name descname"><span class="pre">servicesSupported</span></span><a class="headerlink" href="#lib61850.struct_sMmsConnectionParameters.servicesSupported" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsDomain">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsDomain</span></span><a class="headerlink" href="#lib61850.struct_sMmsDomain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsFloat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsFloat</span></span><a class="headerlink" href="#lib61850.struct_sMmsFloat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsFloat.exponentWidth">
+<span class="sig-name descname"><span class="pre">exponentWidth</span></span><a class="headerlink" href="#lib61850.struct_sMmsFloat.exponentWidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsFloat.formatWidth">
+<span class="sig-name descname"><span class="pre">formatWidth</span></span><a class="headerlink" href="#lib61850.struct_sMmsFloat.formatWidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsJournalEntry">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsJournalEntry</span></span><a class="headerlink" href="#lib61850.struct_sMmsJournalEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsJournalEntry.entryID">
+<span class="sig-name descname"><span class="pre">entryID</span></span><a class="headerlink" href="#lib61850.struct_sMmsJournalEntry.entryID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsJournalEntry.journalVariables">
+<span class="sig-name descname"><span class="pre">journalVariables</span></span><a class="headerlink" href="#lib61850.struct_sMmsJournalEntry.journalVariables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsJournalEntry.occurenceTime">
+<span class="sig-name descname"><span class="pre">occurenceTime</span></span><a class="headerlink" href="#lib61850.struct_sMmsJournalEntry.occurenceTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsJournalVariable">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsJournalVariable</span></span><a class="headerlink" href="#lib61850.struct_sMmsJournalVariable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsJournalVariable.tag">
+<span class="sig-name descname"><span class="pre">tag</span></span><a class="headerlink" href="#lib61850.struct_sMmsJournalVariable.tag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsJournalVariable.value">
+<span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#lib61850.struct_sMmsJournalVariable.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsNamedVariableList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsNamedVariableList</span></span><a class="headerlink" href="#lib61850.struct_sMmsNamedVariableList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsServer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsServer</span></span><a class="headerlink" href="#lib61850.struct_sMmsServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsStructure">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsStructure</span></span><a class="headerlink" href="#lib61850.struct_sMmsStructure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsStructure.elementCount">
+<span class="sig-name descname"><span class="pre">elementCount</span></span><a class="headerlink" href="#lib61850.struct_sMmsStructure.elementCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsStructure.elements">
+<span class="sig-name descname"><span class="pre">elements</span></span><a class="headerlink" href="#lib61850.struct_sMmsStructure.elements" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsValue">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsValue</span></span><a class="headerlink" href="#lib61850.struct_sMmsValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsVariableSpecification">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sMmsVariableSpecification</span></span><a class="headerlink" href="#lib61850.struct_sMmsVariableSpecification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsVariableSpecification.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sMmsVariableSpecification.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsVariableSpecification.type">
+<span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#lib61850.struct_sMmsVariableSpecification.type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sMmsVariableSpecification.typeSpec">
+<span class="sig-name descname"><span class="pre">typeSpec</span></span><a class="headerlink" href="#lib61850.struct_sMmsVariableSpecification.typeSpec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sModelNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sModelNode</span></span><a class="headerlink" href="#lib61850.struct_sModelNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sModelNode.firstChild">
+<span class="sig-name descname"><span class="pre">firstChild</span></span><a class="headerlink" href="#lib61850.struct_sModelNode.firstChild" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sModelNode.modelType">
+<span class="sig-name descname"><span class="pre">modelType</span></span><a class="headerlink" href="#lib61850.struct_sModelNode.modelType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sModelNode.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sModelNode.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sModelNode.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sModelNode.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sModelNode.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sModelNode.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sReportControlBlock</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.bufferTime">
+<span class="sig-name descname"><span class="pre">bufferTime</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.bufferTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.buffered">
+<span class="sig-name descname"><span class="pre">buffered</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.buffered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.clientReservation">
+<span class="sig-name descname"><span class="pre">clientReservation</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.clientReservation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.confRef">
+<span class="sig-name descname"><span class="pre">confRef</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.confRef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.dataSetName">
+<span class="sig-name descname"><span class="pre">dataSetName</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.dataSetName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.intPeriod">
+<span class="sig-name descname"><span class="pre">intPeriod</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.intPeriod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.options">
+<span class="sig-name descname"><span class="pre">options</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.rptId">
+<span class="sig-name descname"><span class="pre">rptId</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.rptId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sReportControlBlock.trgOps">
+<span class="sig-name descname"><span class="pre">trgOps</span></span><a class="headerlink" href="#lib61850.struct_sReportControlBlock.trgOps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sSVControlBlock</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.confRev">
+<span class="sig-name descname"><span class="pre">confRev</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.confRev" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.dataSetName">
+<span class="sig-name descname"><span class="pre">dataSetName</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.dataSetName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.dstAddress">
+<span class="sig-name descname"><span class="pre">dstAddress</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.dstAddress" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.isUnicast">
+<span class="sig-name descname"><span class="pre">isUnicast</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.isUnicast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.noASDU">
+<span class="sig-name descname"><span class="pre">noASDU</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.noASDU" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.optFlds">
+<span class="sig-name descname"><span class="pre">optFlds</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.optFlds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.smpMod">
+<span class="sig-name descname"><span class="pre">smpMod</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.smpMod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.smpRate">
+<span class="sig-name descname"><span class="pre">smpRate</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.smpRate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSVControlBlock.svId">
+<span class="sig-name descname"><span class="pre">svId</span></span><a class="headerlink" href="#lib61850.struct_sSVControlBlock.svId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sSettingGroupControlBlock</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock.actSG">
+<span class="sig-name descname"><span class="pre">actSG</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock.actSG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock.cnfEdit">
+<span class="sig-name descname"><span class="pre">cnfEdit</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock.cnfEdit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock.editSG">
+<span class="sig-name descname"><span class="pre">editSG</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock.editSG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock.numOfSGs">
+<span class="sig-name descname"><span class="pre">numOfSGs</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock.numOfSGs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock.resvTms">
+<span class="sig-name descname"><span class="pre">resvTms</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock.resvTms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock.sibling">
+<span class="sig-name descname"><span class="pre">sibling</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock.sibling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.struct_sSettingGroupControlBlock.timestamp">
+<span class="sig-name descname"><span class="pre">timestamp</span></span><a class="headerlink" href="#lib61850.struct_sSettingGroupControlBlock.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.struct_sTLSConfiguration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">struct_sTLSConfiguration</span></span><a class="headerlink" href="#lib61850.struct_sTLSConfiguration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Structure</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.uMmsTypeSpecification">
+<span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">uMmsTypeSpecification</span></span><a class="headerlink" href="#lib61850.uMmsTypeSpecification" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#lib61850.union_uMmsTypeSpecification" title="lib61850.union_uMmsTypeSpecification"><code class="xref py py-class docutils literal notranslate"><span class="pre">union_uMmsTypeSpecification</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.union_anon_31">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">union_anon_31</span></span><a class="headerlink" href="#lib61850.union_anon_31" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Union</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_anon_31.val">
+<span class="sig-name descname"><span class="pre">val</span></span><a class="headerlink" href="#lib61850.union_anon_31.val" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.union_anon_35">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">union_anon_35</span></span><a class="headerlink" href="#lib61850.union_anon_35" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Union</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_anon_35.certificate">
+<span class="sig-name descname"><span class="pre">certificate</span></span><a class="headerlink" href="#lib61850.union_anon_35.certificate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_anon_35.password">
+<span class="sig-name descname"><span class="pre">password</span></span><a class="headerlink" href="#lib61850.union_anon_35.password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lib61850.</span></span><span class="sig-name descname"><span class="pre">union_uMmsTypeSpecification</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Union</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.array">
+<span class="sig-name descname"><span class="pre">array</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.binaryTime">
+<span class="sig-name descname"><span class="pre">binaryTime</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.binaryTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.bitString">
+<span class="sig-name descname"><span class="pre">bitString</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.bitString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.boolean">
+<span class="sig-name descname"><span class="pre">boolean</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.boolean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.floatingpoint">
+<span class="sig-name descname"><span class="pre">floatingpoint</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.floatingpoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.integer">
+<span class="sig-name descname"><span class="pre">integer</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.integer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.mmsString">
+<span class="sig-name descname"><span class="pre">mmsString</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.mmsString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.octetString">
+<span class="sig-name descname"><span class="pre">octetString</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.octetString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.structure">
+<span class="sig-name descname"><span class="pre">structure</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.structure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.unsignedInteger">
+<span class="sig-name descname"><span class="pre">unsignedInteger</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.unsignedInteger" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.utctime">
+<span class="sig-name descname"><span class="pre">utctime</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.utctime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lib61850.union_uMmsTypeSpecification.visibleString">
+<span class="sig-name descname"><span class="pre">visibleString</span></span><a class="headerlink" href="#lib61850.union_uMmsTypeSpecification.visibleString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">gateway</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Aziz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/lib61850.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

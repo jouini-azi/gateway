@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>server60870 module &#8212; gateway  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-server60870">
+<span id="server60870-module"></span><h1>server60870 module<a class="headerlink" href="#module-server60870" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">server60870.</span></span><span class="sig-name descname"><span class="pre">IEC60870_5_104_server</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.0.0.0'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.ASDU_h">
+<span class="sig-name descname"><span class="pre">ASDU_h</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asdu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.ASDU_h" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.Conn_event">
+<span class="sig-name descname"><span class="pre">Conn_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">con</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.Conn_event" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.Conn_req">
+<span class="sig-name descname"><span class="pre">Conn_req</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.Conn_req" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.GI_h">
+<span class="sig-name descname"><span class="pre">GI_h</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asdu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qoi</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.GI_h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle the interrogration command from the client</p>
+<p>:param param : parameter user provided parameter</p>
+<p>:param connection : represents the TCP connection that received the time sync command</p>
+<p>:param asdu : the received ASDU</p>
+<p>:param qoi : //</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.addioa">
+<span class="sig-name descname"><span class="pre">addioa</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type=&lt;class</span> <span class="pre">'lib60870.LP_struct_sMeasuredValueScaled'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event=False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.addioa" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.alParams">
+<span class="sig-name descname"><span class="pre">alParams</span></span><a class="headerlink" href="#server60870.IEC60870_5_104_server.alParams" title="Permalink to this definition">¶</a></dt>
+<dd><p>..py function CS104_Slave_getAppLayerParameters(self.slave) :: Get the application layer parameters instance</p>
+<p>:param self.slave : the slave instance</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.asduHandler">
+<span class="sig-name descname"><span class="pre">asduHandler</span></span><a class="headerlink" href="#server60870.IEC60870_5_104_server.asduHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>function CS101_InterrogationHandler(self.ASDU_h) ::        Handler for interrogation command (C_IC_NA_1 - 100)</p>
+<p>:type self.ASDU_h : function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>..py</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.clock">
+<span class="sig-name descname"><span class="pre">clock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">con</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asdu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newTime</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.clock" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the time</p>
+<p>:param param : parameter        user provided parameter</p>
+<p>:param con : represents the TCP connection that received the time sync command</p>
+<p>:param asdu : the received ASDU</p>
+<p>:newTime : time received with the time sync message. The user can update this time for the ACT-CON message</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.clockSyncHandler">
+<span class="sig-name descname"><span class="pre">clockSyncHandler</span></span><a class="headerlink" href="#server60870.IEC60870_5_104_server.clockSyncHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>function CS101_ClockSynchronizationHandler(self.clock) :: Handler for clock synchronization command</p>
+<p>:type self.clock : function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>..py</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.connectionEventHandler">
+<span class="sig-name descname"><span class="pre">connectionEventHandler</span></span><a class="headerlink" href="#server60870.IEC60870_5_104_server.connectionEventHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>”
+..py:function CS104_ConnectionEventHandler(self.conn_event) ::Handler that is called when a peer connection is established or closed, or START_DT/STOP_DT is issued</p>
+<p>:type self.conn_event : function</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.connectionRequestHandler">
+<span class="sig-name descname"><span class="pre">connectionRequestHandler</span></span><a class="headerlink" href="#server60870.IEC60870_5_104_server.connectionRequestHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>function CS104_ConnectionRequestHandler(self.conn_req) ::Connection request handler is called when a client tries to connect to the server</p>
+<p>:type self.conn_req : function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>..py</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.interrogationHandler">
+<span class="sig-name descname"><span class="pre">interrogationHandler</span></span><a class="headerlink" href="#server60870.IEC60870_5_104_server.interrogationHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>function CS101_InterrogationHandler(self.GI_h) ::  Handler for interrogation command (C_IC_NA_1 - 100)</p>
+<p>:type self.GI_h : function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>..py</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.printCP56Time2a">
+<span class="sig-name descname"><span class="pre">printCP56Time2a</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.printCP56Time2a" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.read">
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asdu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ioa</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.readEventHandler">
+<span class="sig-name descname"><span class="pre">readEventHandler</span></span><a class="headerlink" href="#server60870.IEC60870_5_104_server.readEventHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>function CS101_ReadHandler(self.read):: Handler for read command (C_RD_NA_1 - 102)</p>
+<p>:type self.read : function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>..py</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.slave">
+<span class="sig-name descname"><span class="pre">slave</span></span><a class="headerlink" href="#server60870.IEC60870_5_104_server.slave" title="Permalink to this definition">¶</a></dt>
+<dd><p>function CS104_Slave_create(maxLowPrioQueueSize , maxHighPrioQueueSize) :: Create a new instance of a CS104 slave (server)</p>
+<p>:type maxLowPrioQueueSize : int
+:param maxLowPrioQueueSize : the maximum size of the event queue</p>
+<p>type maxHighPrioQueueSize : int
+:param maxHighPrioQueueSize : the maximum size of the high-priority queue</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>..py</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.update_data">
+<span class="sig-name descname"><span class="pre">update_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.update_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="server60870.IEC60870_5_104_server.updateioa">
+<span class="sig-name descname"><span class="pre">updateioa</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ioa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#server60870.IEC60870_5_104_server.updateioa" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">gateway</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Aziz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/server60870.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

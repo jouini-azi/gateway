@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>client60870 module &#8212; gateway  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-client60870">
+<span id="client60870-module"></span><h1>client60870 module<a class="headerlink" href="#module-client60870" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="client60870.IEC60870_5_104_client">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">client60870.</span></span><span class="sig-name descname"><span class="pre">IEC60870_5_104_client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2404</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client60870.IEC60870_5_104_client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This Class will represent the client side of the protocol IEC60870</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="client60870.IEC60870_5_104_client.asduReceivedHandler">
+<span class="sig-name descname"><span class="pre">asduReceivedHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asdu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client60870.IEC60870_5_104_client.asduReceivedHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the type of ASDU and IOA and the value related to it.</p>
+<p>:type parameter : void</p>
+<p>:param parameter : user provided parameter</p>
+<p>:type address : int</p>
+<p>:param address : adress of the sender station , it is undefined for CS104 , the adresse will always be -1</p>
+<p>:param asdu : Apllication Service Data unit</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client60870.IEC60870_5_104_client.con">
+<span class="sig-name descname"><span class="pre">con</span></span><a class="headerlink" href="#client60870.IEC60870_5_104_client.con" title="Permalink to this definition">¶</a></dt>
+<dd><p>CS104_Connection_create(ip, port)</p>
+<p>Create a new connection object</p>
+<p>:type ip : char</p>
+<p>:param ip : host name of IP address of the server to connect</p>
+<p>:type port : int</p>
+<p>:param port : tcp port of the server to connect</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client60870.IEC60870_5_104_client.connectionHandler">
+<span class="sig-name descname"><span class="pre">connectionHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client60870.IEC60870_5_104_client.connectionHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the Connection event</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> – event type between  client and  server</p>
+</dd>
+</dl>
+<p>:type parameter:void</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parameter</strong> – user provided parameter</p></li>
+<li><p><strong>connection</strong> – the connection object</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client60870.IEC60870_5_104_client.p_asduReceivedHandler">
+<span class="sig-name descname"><span class="pre">p_asduReceivedHandler</span></span><a class="headerlink" href="#client60870.IEC60870_5_104_client.p_asduReceivedHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>CS101_ASDUReceivedHandler(parameter, address , asdu)</p>
+<p>Callback handler for received ASDUs</p>
+<p>:type parameter : void</p>
+<p>:param parameter : user provided parameter</p>
+<p>:type address : int</p>
+<p>:param address : adress of the sender station , it is undefined for CS104 so the adresse will always be -1</p>
+<p>:type asdu : CS101_ASDU</p>
+<p>:param asdu : Apllication Service Data unit</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="client60870.IEC60870_5_104_client.p_connectionHandler">
+<span class="sig-name descname"><span class="pre">p_connectionHandler</span></span><a class="headerlink" href="#client60870.IEC60870_5_104_client.p_connectionHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>CS104_ConnectionHandler(parameter, connection , event)
+Handler that is called when the connection is established or closed</p>
+<p>:type parameter : void</p>
+<p>:param parameter : user provided parameter</p>
+<p>:type connection : CS104_Connection</p>
+<p>:param connection : adress of the sender station , it is undefined for CS104 , the adresse will always be -1</p>
+<p>:type event : CS104_ConnectionEvent</p>
+<p>:param event : Apllication Service Data unit</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client60870.IEC60870_5_104_client.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client60870.IEC60870_5_104_client.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>CS104_Connection_connect(self.con)</p>
+<p>Establishes a connection to a server</p>
+<p>:param self.con : bool</p>
+<p>:return : true when connected, false otherwise</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">gateway</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Aziz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/client60870.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
